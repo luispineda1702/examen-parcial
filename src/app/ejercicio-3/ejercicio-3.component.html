@@ -1,1 +1,16 @@
-<p>ejercicio-3 works!</p>
+<div class="card">
+    <div class="card-header">
+    RENIEC
+    </div>
+    <div class="card-body">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="txtDNI" placeholder="name@example.com" [(ngModel)]="formDni.anio">
+            <label for="txtDNI">Ingrese su año de nacimiento.</label>
+        </div>
+        <button type="button" (click)="calcularDNI()" class="btn btn-danger mt-3">CALCULAR</button>
+        <hr/>
+        <div class="alert alert-info mt-3" role="alert">
+            {{dniFinal}}
+        </div>
+    </div>
+</div>

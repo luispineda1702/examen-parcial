@@ -7,9 +7,9 @@
             <input type="text" class="form-control" id="txtPrestamos" placeholder="name@example.com" [(ngModel)]="formPrest.prest">
             <label for="txtPrestamos">Ingrese el monto</label>
         </div>
-        <button type="button" (click)="calcularPrestamo()" class="btn btn-primary mt-3">CALCULAR</button>
+        <button type="button" (click)="calcularPrestamo()" class="btn btn-danger mt-3">CALCULAR</button>
         <hr/>
-        <div class="alert alert-primary mt-3" role="alert">
+        <div class="alert alert-dark mt-3" role="alert">
             {{simulacion}}
         </div>
     </div>
