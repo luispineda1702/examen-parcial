@@ -1,1 +1,20 @@
-<p>ejercicio-1 works!</p>
+<div class="card">
+    <div class="card-header">
+        SIMULADOR DE COMPRA
+    </div>
+    <div class="card-body">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="txtPrecio" placeholder="Password" [(ngModel)]="formPrecio.precio">
+            <label for="txtPrecio">Ingrese el precio</label>
+        </div>
+        <div class="form-floating mt-2">
+            <input type="text" class="form-control" id="txtCantidad" placeholder="Password" [(ngModel)]="formPrecio.cantidad">
+            <label for="txtCantidad">Ingrese la cantidad</label>
+        </div>
+        <button type="button" (click)="calcularDescuento()" class="btn btn-success mt-3">CALCULAR</button>
+        <hr/>
+        <div class="alert alert-danger mt-3" role="alert">
+            {{resultado}}
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { Ejercicio1Component } from './ejercicio-1/ejercicio-1.component';
 import { Ejercicio2Component } from './ejercicio-2/ejercicio-2.component';
 import { Ejercicio3Component } from './ejercicio-3/ejercicio-3.component';
@@ -10,3 +10,4 @@ export const routes: Routes = [
     {path:"ejercicio3",component:Ejercicio3Component},
     {path:"ejercicio4",component:Ejercicio4Component}
 ];
+
